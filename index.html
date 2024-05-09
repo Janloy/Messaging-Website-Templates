@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with John Doe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Left Sidebar (Contacts List) -->
+    <div class="sidebar">
+      <h3 style="padding: 20px; text-align: center;">Contacts</h3>
+      <div class="search-bar">
+        <div class="search-icon"></div>
+        <input type="text" class="search-input" placeholder="Search contacts...">
+      </div>
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <img src="https://via.placeholder.com/40" alt="User 1" class="contact-img">
+          John Doe
+        </li>
+        <li class="contact-item">
+          <img src="https://via.placeholder.com/40" alt="User 2" class="contact-img">
+          Jane Smith
+        </li>
+        <li class="contact-item">
+          <img src="https://via.placeholder.com/40" alt="User 3" class="contact-img">
+          Mike Johnson
+        </li>
+        <!-- Add more contacts as needed -->
+      </ul>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+      <div class="chat-header">
+        <img src="https://via.placeholder.com/40" alt="User" class="user-img">
+        John Doe
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
